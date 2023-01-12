@@ -1,0 +1,14 @@
+<!-- <app-frontpage></app-frontpage> -->
+<div>
+    
+    <mat-card *ngFor="let card of cards">
+        <img src="{{card.img}}" alt="">
+        <mat-card-content>
+            <h3>{{card.movieName | titlecase}}</h3>
+        </mat-card-content>
+        <mat-card-actions>
+            <button>Book Now</button>
+        </mat-card-actions>
+    </mat-card>
+    
+</div>
